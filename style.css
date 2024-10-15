@@ -11,26 +11,21 @@
     background-color: silver;
     border-radius: 4px;
 }
-
+html{
+	scroll-behavior: smooth;
+	}
 .container {
-    margin: 0 auto;
     padding: 20px 0px 20px 20px;
+	height:400px;
 }
-.video{
-	background-color:black;
+video {
 	position:absolute;
 	top:0;
 	left: 0;
-	width: 100%;
-	height: 60%;
+	height:400px;
+	width:100%;
 	z-index: -1;
 	object-fit: cover;
-}
-.video video {
-	object-fit: cover;
-	height:100%;
-	width: 100%;
-	opacity: 0.5;
 }
 .header {
     display: flex;
@@ -110,13 +105,11 @@
 	font-family: roboto, sans-serif;
 	margin-top:20px;
 }
-
-
 .proposito{
-	color:#37556D;
+	color:black;
 	text-align:right;
-    padding:30px;
-	margin-top:9%;
+    padding:5%;
+	padding-top:0px;
 	font-size:15px;
 	font-family:Roboto, sans-serif;
 	animation: slideInFromRight 2s forwards;
@@ -128,9 +121,93 @@
 	font-family:lilita one, sans-serif;
 }
 
-footer{
-	margin-top:500px;
+.sobre{
+	color:black;
+	text-align:left;
+    padding:5%;
+	padding-top:0px;
+	font-size:15px;
+	font-family:Roboto, sans-serif;
+	animation: slideInFromLeft 2s forwards;
 }
+.sobre h3{
+	color:#37556D;
+	text-align:left;
+	font-size:35px;
+	font-family:lilita one, sans-serif;
+}
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-container h1{
+	color:#37556D;
+	text-align:center;
+	font-size:35px;
+	font-family:lilita one, sans-serif;
+	margin-bottom:20px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.person {
+  min-width: 32%;
+  text-align: center;
+  padding: 10px;
+}
+
+.person img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.person h3 {
+	font-family:lilita one, sans-serif;
+	color:#37556D;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.person p {
+	
+	font-family:Roboto, sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10; /* Garante que as setas fiquem acima do conteúdo */
+  border-radius:20px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel-container button:focus {
+  outline: none;
+}
+
 .rodape{
 	color:white;
 	text-align:center;
@@ -158,6 +235,15 @@ footer{
     opacity: 0.7;
 }
 
+@keyframes grifar {
+        from {
+            background-size: 0 100%;
+        }
+        to {
+            background-size: 100% 100%;
+        }
+}
+	
 @keyframes slideInFromRight{
 	0%{
 		transform: translateX(50px);
@@ -168,6 +254,30 @@ footer{
 		opacity: 1;
 	}
 }
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+	.carousel-container {
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(50px); /* Move para baixo inicialmente */
+    transition: opacity 2s ease, transform 2s ease; /* Transição suave */
+}
+
+.carousel-container.show {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Move para a posição original */
+}
+
+	
+	
 @media screen and (max-width: 768px) {
 	.container {
 		padding:0px;
@@ -206,13 +316,13 @@ footer{
 	.canto-direito {
 		display:none;
 	}
+	.person {
+		min-width: 25%;
+		text-align: center;
+		padding: 10px;
+	}
+	.person img {
+		width: 100%;
+		object-fit: cover;
+	}
 }
-
- @keyframes grifar {
-            from {
-                background-size: 0 100%;
-            }
-            to {
-                background-size: 100% 100%;
-            }
-        }

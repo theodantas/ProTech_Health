@@ -16,12 +16,7 @@
 <body>
 	
     <div class="container">
-	<div class="video">
-		<video autoplay muted repeat>
-		<source src="img/fund.mp4">
-		</video> 
-		
-	</div>
+		<video autoplay muted repeat><source src="img/fund.mp4"></video> 
         <div class="header">
             <div class="logo-nome">
                 <div class="logo">
@@ -33,8 +28,8 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li id="ativo"><a href="#home" >Home</a></li>
-                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
                     <li><a href="#app">App</a></li>
                 </ul>
@@ -45,10 +40,55 @@
             <p>O SafeBite prioriza a saúde e bem-estar do cliente, disponibilizando conforto e segurança no momento de sua refeição.</p>
         </div>
     </div>
+	
 	<div class="proposito">
 		<h3>A ProTech Health</h3>
 		<p>tem como propósito garantir a segurança de seus clientes ao realizarem tarefas do cotidiano. Portanto, através do uso da tecnologia, a empresa demonstra que é possível realizar os afazeres de forma segura, eficiente, ágil e versátil.</p>
 	</div>
+	
+	<div class="sobre" id="sobre">
+		<h3>Somos</h3>
+		<p>futuros técnicos em desenvolvimento de sistemas, com uma iniciativa inovadora de desenvolver nosso projeto SafeBite, a qual criamos para o nosso Trabalho de Conclusão de Curso (TCC). Portanto, o projeto também irá desempenhar um papel avaliativo para os nossos conhecimentos tecnológicos e organizacionais, entre outros obtidos durantes as aulas e experiências externas.</p>
+	</div>
+	
+	<div class="carousel-container">
+		<h1>Conheça Nossa Equipe<h1>
+		<button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+		<div class="carousel">
+		  <div class="person">
+			<img src="img/gabrielly.png" alt="Pessoa 1">
+			<h3>Gabrielly Marquez</h3>
+			<p>Breve descrição<p>
+		  </div>
+		  <div class="person">
+			<img src="img/guilherme.png" alt="Pessoa 2">
+			<h3>Guilherme Neri</h3>
+			<p>Breve descrição</p>
+		  </div>
+		  <div class="person">
+			<img src="img/luana.png" alt="Pessoa 3">
+			<h3>Luana Campos</h3>
+			<p>Breve descrição</p>
+		  </div>
+		  <div class="person">
+			<img src="img/matheus.png" alt="Pessoa 4">
+			<h3>Matheus Brasil</h3>
+			<p>Breve descrição</p>
+		  </div>
+		  <div class="person">
+			<img src="img/rhayssa.png" alt="Pessoa 5">
+			<h3>Rayssa dos Santos</h3>
+			<p>Breve descrição</p>
+		  </div>
+		  <div class="person">
+			<img src="img/theo.png" alt="Pessoa 6">
+			<h3>Théo Dantas</h3>
+			<p>Breve descrição</p>
+		  </div>
+		</div>
+		<button class="next" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+  
 	<footer>
 	<div class="rodape">
 		<p>Celular: (XX) XXXX-XXXX</p>
@@ -56,5 +96,6 @@
 		<a href="https://www.instagram.com/protech.health/" target="_blank" title="Nos siga"><img src="img/insta.webp" height="25px"></a>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
