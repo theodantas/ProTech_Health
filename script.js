@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Animação Entrada Missão, Visão e Valores
 document.addEventListener('DOMContentLoaded', () => {
-  const animationElements = document.querySelectorAll('.conteudo h1, .conteudo p, .conteudo img, .title_depoimentos h3, .depoimentos .bloco, .depoimentos .bloco p, .depoimentos .bloco h3, .depoimentos .foto');
+  const animationElements = document.querySelectorAll('.conteudo h1, .conteudo p, .conteudo img, .title_depoimentos h3, .depoimentos .bloco, .depoimentos .bloco p, .depoimentos .bloco h2, .depoimentos .foto');
 
   const onScroll = () => {
     const windowHeight = window.innerHeight;

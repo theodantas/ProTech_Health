@@ -82,12 +82,6 @@ video {
 }
 
 .menu a:hover {
-	background-color: #eee;
-	border-radius: 20px;
-	color: #37556D;
-}
-
-#ativo {
 	text-decoration: underline;
 }
 
@@ -112,6 +106,7 @@ video {
 	padding: 4px;
 	display: inline;
 	font-family: roboto, sans-serif;
+	font-size: 15px;
 	margin-top: 20px;
 }
 
@@ -122,7 +117,6 @@ video {
 	align-items: center;
 	width:100%;
 	height:400px;
-	text-align: justify;
 	animation: slideInFromRight 2s forwards;
 }
 .proposito .text_proposito{
@@ -134,9 +128,11 @@ video {
 	color: #37556D;
 	font-size: 45px;
 	font-family: lilita one, sans-serif;
+	text-align: left;
 }
 
 .proposito .text_proposito p {
+	text-align: justify;
 	padding:25px;
 	padding-top:0px;
 	color: #black;
@@ -222,7 +218,7 @@ video {
 }
 
 .person {
-	min-width: 32%;
+	min-width: 31%;
 	text-align: center;
 	padding: 10px;
 }
@@ -230,7 +226,6 @@ video {
 .person img {
 	width: 100px;
 	height: 100px;
-	object-fit: cover;
 }
 
 .person h3 {
@@ -246,6 +241,7 @@ video {
 	font-size: 15px;
 	margin-top: 5px;
 	text-align: left;
+	text-align: justify;
 }
 
 button {
@@ -325,7 +321,7 @@ button {
 
 .conteudo h1 {
 	font-family: lilita one, sans-serif;
-	
+	font-size:30px;
 }
 
 .conteudo p {
@@ -534,23 +530,41 @@ button {
 	width:100%;
 	height:100%;
 }
-
+.proposito .text_proposito h3, .sobre .text_sobre h3{
+	font-size:35px;
+}
+.carousel-container h1{
+	font-size:35px;
+}
+.carousel-container {
+	height:300px;
+}
+.title_depoimentos h3{
+	color: #37556D;
+	text-align: center;
+	font-size: 35px;
+	font-family: lilita one, sans-serif;
+	margin-top: 20px;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 2s ease, transform 2s ease;
+	}
 	.person {
 		min-width: 25%;
 		text-align: center;
 		padding: 10px;
+		height:25%;
 	}
 
 	.person img {
 		width: 100%;
-		object-fit: cover;
+		height:100%;
 	}
-
+	.person h3 {
+		font-size:;
+	}
 	.person p {
-		font-family: Roboto, sans-serif;
-		font-size: 12px;
-		margin-top: 5px;
-		text-align: left;
+		display:none;
 	}
 
 	.tela {
