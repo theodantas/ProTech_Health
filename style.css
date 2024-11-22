@@ -669,7 +669,7 @@ button {
 	.canto-direito {
 		display: none;
 	}
-	.sobre, .proposito, .safebit{
+	.sobre, .proposito, .safebite{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
