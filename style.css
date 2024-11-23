@@ -262,6 +262,7 @@ body {
 	font-size: 45px;
 	font-family: lilita one, sans-serif;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .carrossel .carrossel_integrantes {
@@ -439,16 +440,14 @@ body {
 }
 
 .titulo_mascotes h1 {
-	color: white;
-	background-color: #37556D;
+	color: #37556D;
 	text-align: center;
 	font-size: 45px;
 	font-family: lilita one, sans-serif;
-	margin-top: 20px;
+	margin-top: 25px;
 	opacity: 0;
 	transform: translateY(50px);
 	transition: opacity 2s ease, transform 2s ease;
-	padding-top: 10px;
 }
 
 .mascotes {
@@ -457,7 +456,7 @@ body {
 	background-color: #37556D;
 	flex-wrap: wrap;
 	padding: 20px;
-	padding-top: 0px;
+	margin-top: 15px;
 }
 
 .mascotes .bloco {
