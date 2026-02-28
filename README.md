@@ -39,7 +39,7 @@ Neste projeto apliquei os seguintes pontos:
 <table align="center">
   <tr>
     <td>
-      <img src="https://github.com/theodantas.png" width="100px" style="border-radius: 50%" />
+      <img src="https://github.com/theodantas.png" width="100px"/>
     </td>
     <td>
       Feito por <a href="https://github.com/theodantas">Théo Dantas.</a> 🙋‍♂️
